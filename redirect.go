@@ -16,5 +16,5 @@ func redirect(w http.ResponseWriter, req *http.Request) {
 
 func main() {
     // redirect every http request to https
-    go http.ListenAndServe(":80", http.HandlerFunc(redirect))
+    http.ListenAndServe(":80", http.HandlerFunc(redirect))
 }
