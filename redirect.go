@@ -1,7 +1,6 @@
 package main
 import (
     "net/http"
-    "log"
 )
 
 func redirect(w http.ResponseWriter, req *http.Request) {
